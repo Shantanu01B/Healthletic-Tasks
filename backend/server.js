@@ -7,6 +7,9 @@ const { notFound, errorHandler } = require('./middleware/errorMiddleware');
 const authRoutes = require('./routes/authRoutes');
 const productRoutes = require('./routes/productRoutes');
 const contactRoutes = require('./routes/contactRoutes');
+const serviceRoutes = require('./routes/serviceRoutes');
+const workoutRoutes = require('./routes/workoutRoutes');
+const dietPlanRoutes = require('./routes/dietPlanRoutes');
 
 dotenv.config();
 
@@ -24,6 +27,9 @@ app.get('/', (req, res) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/contact', contactRoutes);
+app.use('/api/services', serviceRoutes);
+app.use('/api/workouts', workoutRoutes);
+app.use('/api/diet-plans', dietPlanRoutes);
 
 app.use(notFound);
 app.use(errorHandler);

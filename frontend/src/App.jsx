@@ -7,6 +7,9 @@ import Signup from './pages/Signup';
 import ProductListing from './pages/ProductListing';
 import Dashboard from './pages/Dashboard';
 import Contact from './pages/Contact';
+import Services from './pages/Services';
+import HomeWorkout from './pages/HomeWorkout';
+import DietPlans from './pages/DietPlans';
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
             <Route path="/products" element={<ProductListing />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/home-workout" element={<HomeWorkout />} />
+            <Route path="/diet-plans" element={<DietPlans />} />
           </Routes>
         </main>
         <footer className="bg-slate-900 text-white py-12">

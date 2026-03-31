@@ -22,7 +22,10 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8 font-medium">
           <Link to="/" className="hover:text-primary-600 transition-colors">Home</Link>
-          <Link to="/products" className="hover:text-primary-600 transition-colors">Services</Link>
+          <Link to="/services" className="hover:text-primary-600 transition-colors">Services</Link>
+          <Link to="/home-workout" className="hover:text-primary-600 transition-colors">Workouts</Link>
+          <Link to="/diet-plans" className="hover:text-primary-600 transition-colors">Diet Plans</Link>
+          <Link to="/products" className="hover:text-primary-600 transition-colors">Shop</Link>
           <Link to="/contact" className="hover:text-primary-600 transition-colors">Contact</Link>
           
           {userInfo ? (
@@ -52,7 +55,10 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-slate-200 py-6 px-6 flex flex-col space-y-4 shadow-xl">
           <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
-          <Link to="/products" onClick={() => setIsOpen(false)}>Services</Link>
+          <Link to="/services" onClick={() => setIsOpen(false)}>Services</Link>
+          <Link to="/home-workout" onClick={() => setIsOpen(false)}>Workouts</Link>
+          <Link to="/diet-plans" onClick={() => setIsOpen(false)}>Diet Plans</Link>
+          <Link to="/products" onClick={() => setIsOpen(false)}>Shop</Link>
           <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
           {userInfo ? (
             <>

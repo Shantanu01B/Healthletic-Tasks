@@ -1,0 +1,31 @@
+# Dependency directories
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Build artifacts
+dist/
+build/
+frontend/dist/
+
+# Environment variables
+.env
+backend/.env
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.log
+
+# Workspace specific
+.gemini/
+.agent/
+.agents/
+_agent/
+_agents/
+
+# Temporary files
+tmp/
+C:\Users\Shantanu\.gemini\antigravity\brain\25e5cd99-ef99-48f2-8c84-b17befeb6470\
